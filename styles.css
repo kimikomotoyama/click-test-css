@@ -1,0 +1,44 @@
+.container h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: min-content;
+}
+
+.fadeout {
+  animation : fadeOut 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.enlarge {
+  animation: enlarge 1s;
+  -webkit-animation: enlarge 1s;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1)  ;
+    -webkit-transform: scale(1)  ;
+    -moz-transform: scale(1)  ;
+    -ms-transform: scale(1)  ;
+    -o-transform: scale(1)  ;
+  }
+  100% {
+    transform: scale(3)  ;
+    -webkit-transform: scale(3)  ;
+    -moz-transform: scale(3)  ;
+    -ms-transform: scale(3)  ;
+    -o-transform: scale(3)  ;
+  }
+}
